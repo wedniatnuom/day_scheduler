@@ -128,48 +128,50 @@ function currentBackgroundColor() {
 currentBackgroundColor();
 backgroundColor();
 
-document.getElementById("9btn").addEventListener("click", saveEvent);
-function saveEvent() {
+
+
+document.getElementById("9btn").addEventListener("click", saveEvent9);
+function saveEvent9() {
     var nineText = document.getElementById('9text').value;
     localStorage.setItem("nineEvent", nineText);
 }
-document.getElementById("10btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("10btn").addEventListener("click", saveEvent10);
+function saveEvent10() {
     var tenText = document.getElementById('10text').value;
     localStorage.setItem("tenEvent", tenText);
 }
-document.getElementById("11btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("11btn").addEventListener("click", saveEvent11);
+function saveEvent11() {
     var elevenText = document.getElementById('11text').value;
     localStorage.setItem("elevenEvent", elevenText);
 }
-document.getElementById("12btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("12btn").addEventListener("click", saveEvent12);
+function saveEvent12() {
     var twelveText = document.getElementById('12text').value;
     localStorage.setItem("tewelveEvent", twelveText);
 }
-document.getElementById("13btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("13btn").addEventListener("click", saveEvent1);
+function saveEvent1() {
     var oneText = document.getElementById('13text').value;
     localStorage.setItem("oneEvent", oneText);
 }
-document.getElementById("14btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("14btn").addEventListener("click", saveEvent2);
+function saveEvent2() {
     var twoText = document.getElementById('14text').value;
     localStorage.setItem("twoEvent", twoText);
 }
-document.getElementById("15btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("15btn").addEventListener("click", saveEvent3);
+function saveEvent3() {
     var threeText = document.getElementById('15text').value;
     localStorage.setItem("threeEvent", threeText);
 }
-document.getElementById("16btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("16btn").addEventListener("click", saveEvent4);
+function saveEvent4() {
     var fourText = document.getElementById('16text').value;
     localStorage.setItem("fourEvent", fourText);
 }
-document.getElementById("17btn").addEventListener("click", saveEvent);
-function saveEvent() {
+document.getElementById("17btn").addEventListener("click", saveEvent5);
+function saveEvent5() {
     var fiveText = document.getElementById('17text').value;
     localStorage.setItem("fiveEvent", fiveText);
 }
@@ -183,3 +185,40 @@ document.getElementById("14text").innerHTML = localStorage.getItem("twoEvent");
 document.getElementById("15text").innerHTML = localStorage.getItem("threeEvent");
 document.getElementById("16text").innerHTML = localStorage.getItem("fourEvent");
 document.getElementById("17text").innerHTML = localStorage.getItem("fiveEvent");
+
+// document.getElementById("9btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test9");
+// }
+// document.getElementById("10btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test10");
+// }
+// document.getElementById("11btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test11");
+// }
+// document.getElementById("12btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test12");
+// }
+// document.getElementById("13btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test1");
+// }
+// document.getElementById("14btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test2");
+// }
+// document.getElementById("15btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test3");
+// }
+// document.getElementById("16btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test4");
+// }
+// document.getElementById("17btn").addEventListener("click", saveEvent);
+// function saveEvent() {
+// console.log("test5");
+// }
