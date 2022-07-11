@@ -10,15 +10,6 @@ var tThree = document.getElementById('t1500');
 var tFour = document.getElementById('t1600');
 var tFive = document.getElementById('t1700');
 
-var tenText = document.getElementById('10text').value;
-var eleventText = document.getElementById('11text').value;
-var twelveText = document.getElementById('12text').value;
-var oneText = document.getElementById('13text').value;
-var twoText = document.getElementById('14text').value;
-var threeText = document.getElementById('15text').value;
-var fourText = document.getElementById('16text').value;
-var fiveText = document.getElementById('17text').value;
-
 dateEl.textContent = moment().format('MMMM Do YYYY');
 
 function time() {
@@ -142,5 +133,53 @@ function saveEvent() {
     var nineText = document.getElementById('9text').value;
     localStorage.setItem("nineEvent", nineText);
 }
+document.getElementById("10btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var tenText = document.getElementById('10text').value;
+    localStorage.setItem("tenEvent", tenText);
+}
+document.getElementById("11btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var elevenText = document.getElementById('11text').value;
+    localStorage.setItem("elevenEvent", elevenText);
+}
+document.getElementById("12btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var twelveText = document.getElementById('12text').value;
+    localStorage.setItem("tewelveEvent", twelveText);
+}
+document.getElementById("13btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var oneText = document.getElementById('13text').value;
+    localStorage.setItem("oneEvent", oneText);
+}
+document.getElementById("14btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var twoText = document.getElementById('14text').value;
+    localStorage.setItem("twoEvent", twoText);
+}
+document.getElementById("15btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var threeText = document.getElementById('15text').value;
+    localStorage.setItem("threeEvent", threeText);
+}
+document.getElementById("16btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var fourText = document.getElementById('16text').value;
+    localStorage.setItem("fourEvent", fourText);
+}
+document.getElementById("17btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var fiveText = document.getElementById('17text').value;
+    localStorage.setItem("fiveEvent", fiveText);
+}
 
 document.getElementById("9text").innerHTML = localStorage.getItem("nineEvent");
+document.getElementById("10text").innerHTML = localStorage.getItem("tenEvent");
+document.getElementById("11text").innerHTML = localStorage.getItem("elevenEvent");
+document.getElementById("12text").innerHTML = localStorage.getItem("twelveEvent");
+document.getElementById("13text").innerHTML = localStorage.getItem("oneEvent");
+document.getElementById("14text").innerHTML = localStorage.getItem("twoEvent");
+document.getElementById("15text").innerHTML = localStorage.getItem("threeEvent");
+document.getElementById("16text").innerHTML = localStorage.getItem("fourEvent");
+document.getElementById("17text").innerHTML = localStorage.getItem("fiveEvent");
