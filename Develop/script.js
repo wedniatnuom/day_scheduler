@@ -10,6 +10,15 @@ var tThree = document.getElementById('t1500');
 var tFour = document.getElementById('t1600');
 var tFive = document.getElementById('t1700');
 
+var tenText = document.getElementById('10text').value;
+var eleventText = document.getElementById('11text').value;
+var twelveText = document.getElementById('12text').value;
+var oneText = document.getElementById('13text').value;
+var twoText = document.getElementById('14text').value;
+var threeText = document.getElementById('15text').value;
+var fourText = document.getElementById('16text').value;
+var fiveText = document.getElementById('17text').value;
+
 dateEl.textContent = moment().format('MMMM Do YYYY');
 
 function time() {
@@ -127,3 +136,11 @@ function currentBackgroundColor() {
 
 currentBackgroundColor();
 backgroundColor();
+
+document.getElementById("9btn").addEventListener("click", saveEvent);
+function saveEvent() {
+    var nineText = document.getElementById('9text').value;
+    localStorage.setItem("nineEvent", nineText);
+}
+
+document.getElementById("9text").innerHTML = localStorage.getItem("nineEvent");
